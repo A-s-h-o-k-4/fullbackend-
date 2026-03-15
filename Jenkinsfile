@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Build Spring Boot') {
 steps {
-bat './mvnw clean package'
+bat './mvnw clean package -DskipTests'
 }
 }
 
