@@ -15,7 +15,7 @@ bat 'docker-compose build'
 
 stage('Docker Deploy') {
 steps {
-bat 'docker-compose -d up'
+bat 'docker-compose up -d'
 }
 }
 
