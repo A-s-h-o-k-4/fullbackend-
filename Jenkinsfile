@@ -2,7 +2,7 @@ pipeline {
 agent none
 stages {
 stage('Build Spring Boot') {
-agent {'label 'jdk-maven-agent'}
+agent {label 'jdk-maven-agent'}
 steps {
 sh './mvnw clean package'
 }
